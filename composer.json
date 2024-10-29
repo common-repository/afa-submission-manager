@@ -1,0 +1,62 @@
+{
+    "name": "claud/afa-submission-manager",
+    "autoload": {
+        "psr-4": {
+            "AFASM\\Includes\\Routes\\": "includes/routes/",
+            "AFASM\\Includes\\Routes\\GF\\": "includes/routes/gf/",
+            "AFASM\\Includes\\Routes\\WPF\\": "includes/routes/wpf/",
+            "AFASM\\Includes\\Routes\\WEF\\": "includes/routes/wef/",
+            "AFASM\\Includes\\Routes\\CF7\\": "includes/routes/cf7/",
+            "AFASM\\Includes\\Routes\\EFB\\": "includes/routes/efb/",
+            "AFASM\\Includes\\Controllers\\": "includes/controllers/",
+            "AFASM\\Includes\\Controllers\\GF\\": "includes/controllers/gf/",
+            "AFASM\\Includes\\Controllers\\WPF\\": "includes/controllers/wpf/",
+            "AFASM\\Includes\\Controllers\\WEF\\": "includes/controllers/wef/",
+            "AFASM\\Includes\\Controllers\\CF7\\": "includes/controllers/cf7/",
+            "AFASM\\Includes\\Controllers\\EFB\\": "includes/controllers/efb/",
+            "AFASM\\Includes\\Models\\": "includes/models/",
+            "AFASM\\Includes\\Models\\GF\\": "includes/models/gf/",
+            "AFASM\\Includes\\Models\\WPF\\": "includes/models/wpf/",
+            "AFASM\\Includes\\Models\\WEF\\": "includes/models/wef/",
+            "AFASM\\Includes\\Models\\CF7\\": "includes/models/cf7/",
+            "AFASM\\Includes\\Models\\EFB\\": "includes/models/efb/",
+            "AFASM\\Includes\\Schema\\": "includes/schema/",
+            "AFASM\\Includes\\Plugins\\": "includes/plugins/",
+            "AFASM\\Includes\\Plugins\\JWT\\": "includes/plugins/jwt/",
+            "AFASM\\Includes\\Plugins\\Helpers\\": "includes/plugins/helpers/",
+            "AFASM\\Includes\\Database\\": "includes/database/",
+            "AFASM\\Includes\\Admin\\": "includes/admin/",
+            "AFASM\\Includes\\Admin\\Pages\\": "includes/admin/pages/",
+            "AFASM\\Includes\\Admin\\Screens\\": "includes/admin/screens/",
+            "AFASM\\Includes\\Plugins\\Notification\\": "includes/plugins/notification/" 
+        }
+    },
+    "scripts": {
+        "tests":"./vendor/bin/phpunit",
+        "phpcs":"./vendor/bin/phpcs --standard=WordPress",
+        "phpcb":"./vendor/bin/phpcbf --standard=WordPress"
+    },
+    "authors": [
+        {
+            "name": "claudionhangapc",
+            "email": "claudionhangapc@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.3",
+        "chillerlan/php-qrcode": "^4.3",
+        "ctwillie/expo-server-sdk-php": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.*",
+        "yoast/phpunit-polyfills": "^1.0",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpcompatibility/phpcompatibility-wp": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
